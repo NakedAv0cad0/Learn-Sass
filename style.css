@@ -1,0 +1,133 @@
+.box {
+  border: 2px solid black;
+}
+
+.box .three, .box .two, .box .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 150px;
+  background-color: #eee;
+  margin: auto;
+}
+.box:first-of-type {
+  margin-top: 100px;
+}
+.box:not(.green, .red) {
+  width: 700px;
+  background-color: gray;
+}
+.box:last-of-type {
+  width: 500px;
+}
+.box.red {
+  background-color: rgba(160, 61, 61, 0.685);
+}
+.box.green {
+  background-color: rgba(104, 204, 104, 0.63);
+}
+.box .one {
+  width: 130px;
+  height: 80px;
+  border: 5px solid #eee;
+  outline: 5px solid #888888;
+  background-color: #888888;
+  color: white;
+}
+.box .two {
+  width: 130px;
+  height: 80px;
+  border: 5px solid #eee;
+  outline: 5px solid #888888;
+  background-color: #888888;
+  color: white;
+}
+.box .three {
+  width: 130px;
+  height: 80px;
+  border: 5px solid #eee;
+  outline: 5px solid #888888;
+  background-color: #888888;
+  color: white;
+}
+.box *:hover {
+  width: 150px;
+  height: 100px;
+  font-size: 26px;
+}
+
+.name-Jack0 {
+  font-size: 20px;
+  background-image: url("imgs/Jack1.png");
+  left: 0;
+  background-color: blue;
+}
+.name-Jack0::before {
+  content: "facebook";
+}
+
+.name-Jack0 {
+  font-size: 20px;
+  background-image: url("imgs/Jack1.png");
+  left: 0;
+  background-color: green;
+}
+.name-Jack0::before {
+  content: "whatsapp";
+}
+
+.name-Jack0 {
+  font-size: 20px;
+  background-image: url("imgs/Jack1.png");
+  left: 0;
+  background-color: pink;
+}
+.name-Jack0::before {
+  content: "instagram";
+}
+
+.one {
+  font-size: 22px;
+  color: blue;
+  position: relative;
+  left: 0;
+}
+
+.two {
+  font-size: 20px;
+  color: greenyellow;
+  position: relative;
+  left: 10px;
+}
+
+.three {
+  font-size: 16px;
+  color: orange;
+  position: relative;
+  left: 20px;
+}
